@@ -50,15 +50,18 @@
 					<div class="col-md-4">
 						<h3>Helpful Teams Near Us</h3>
 						<ul>
-								<li><a href="http://delphielite.com/" target="_blank">#48   - Delphi E.L.I.T.E.</a></li>
-								<li><a href="http://www.redbarons63.com/" target="_blank">#63   - The Red Barons</a></li>
-								<li><a href="http://team291.org/Team291/index.html" target="_blank">#291  - C.I.A. - Creativity In Action</a>
-								</li>
-								<li><a href="http://falcotech3193.com/" target="_blank">#3193 - Falco Tech</a></li>
+							<li><a href="http://delphielite.com/" target="_blank">#48   - Delphi E.L.I.T.E.</a></li>
+							<li><a href="http://www.redbarons63.com/" target="_blank">#63   - The Red Barons</a></li>
+							<li><a href="http://team291.org/Team291/index.html" target="_blank">#291  - C.I.A. - Creativity In Action</a>
+							</li>
+							<li><a href="http://falcotech3193.com/" target="_blank">#3193 - Falco Tech</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						Copyright&copy; 2013 &middot; CircuitBirds.com
+					</div>
 				</div>
 			</div>
 		</div><!--/CONTAINER-->
