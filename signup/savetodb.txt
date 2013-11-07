@@ -1,0 +1,34 @@
+<?php
+
+//Require the script configuration file
+
+//Define variables for the SQL Login
+$__HOST = 'localhost';
+$__USER = 'School';
+$__PASS = 'correctmouse';
+$__TABL = 'School.web';
+
+//Connect to the SQL server and set the table to be used
+mysql_connect($__HOST, $__USER, $__PASS);
+mysql_select_db($__TABL);
+
+//Unset the variables for security
+unset($__HOST);
+unset($__USER);
+unset($__PASS);
+unset($__TABL);
+
+
+	$_Query = '
+			INSERT INTO
+			web
+			(Fname, Lname, Email, Grade, Phone, ParentEm, Design, Writing, Speaking, Things, Prog, Web, Other)
+			VALUES
+			("'.$_REQUEST['Fname'].'", "'.$_REQUEST['Lname'].'", "'.$_REQUEST['Email'].'", "'.$_REQUEST['Gradelevel'].'", "'.$_REQUEST['Sphone'].'", "'.$_REQUEST['ParentEmail'].'", "'.$_REQUEST['Design'].'", "'.$_REQUEST['Writing'].'", "'.$_REQUEST['Speaking'].'", "'.$_REQUEST['Things'].'", "'.$_REQUEST['Prog'].'", "'.$_REQUEST['Web'].'", "'.$_REQUEST['Other'].'" );';
+			
+	$SQLResult = mysql_query($_Query) or die(mysql_error());
+	
+	return $_UserData;
+
+}
+?>
