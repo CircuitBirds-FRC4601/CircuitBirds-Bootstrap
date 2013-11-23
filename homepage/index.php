@@ -137,24 +137,27 @@ hr {margin:8px;}
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md12">
-							<form class="form">
-								<div class="well">
+							<div class="col-md-12">
+								<form class="form form-inline">
 									<div id="error-Wrapper"></div>
 									<div class="form-group">
 										<label class="control-label" for="FName">username</label>
-										<input type="text" class="form-control" id="FName" placeholder="Enter first name">
+										<input type="text" class="form-control" disabled="disabled" id="User" placeholder="Username...">
 									</div>
 									<div class="form-group">
 										<label class="control-label" for="LName">password</label>
-										<input type="text" class="form-control" id="LName" placeholder="Enter last name">
+										<input type="password" class="form-control" disabled="disabled" id="Pass" placeholder="Password..">
 									</div>
-								</div>
-							</form>
+								</form>
+							</div>
 						</div>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-warning" data-dismiss="modal" onclick="HideLoginModal()">Cancel</button>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default" disabled="disabled" onclick="Error()">Login</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="HideLoginModal()">Cancel</button>
+						</div>
+						
 					</div>
 				</div><!-- /MODAL-CONTENT -->
 			</div><!-- /MODAL-DIALOG -->
@@ -162,8 +165,16 @@ hr {margin:8px;}
 
 
 <script>
+var errorReturn
+function submit()
+{
+//do POST and session stuff
+//then parse the returned text, probably JSON.
+//do logic.. if there's an error, leave the modal up: else loce it and load the username. 
+}
+function Error(err){document.getElementById("error-Wrapper").innerHTML="<div class=\"alert alert-danger\"><strong>"+err+"</strong><\/div>";}
 function ShowLoginModal(){$('#LoginModal').modal({backdrop:false})}
-function HideLoginModal(){$('#LoginModal').modal(hide)}
+function HideLoginModal(){$("#error-Wrapper").contents().remove();$('#LoginModal').modal(hide);}
 </script>
 <script src="//code.jquery.com/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
