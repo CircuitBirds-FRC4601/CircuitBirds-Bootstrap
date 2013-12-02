@@ -26,9 +26,9 @@ hr {margin:8px;}
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Sponsors</a></li>
-						<li><a href="#">Contact</a></li>
+						<li class="active"><a href="">Home</a></li>
+						<li><a href="sponsors/">Sponsors</a></li>
+						<li><a href="contact/">Contact</a></li>
 						<li><a onclick="ShowLoginModal()">Login</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -61,7 +61,7 @@ hr {margin:8px;}
 								<div id="collapseOne" class="panel-collapse collapse in">
 									<div class="panel-body">
 										<img src="http://circuitbirds.com/images/img_0493.png" width="100%" alt="" /><hr>
-										<div class="well">We will be at Canfield High School on December 7<sup>th</sup> for Canfield High School's annual Craft Show. Our table will be next to the CAD Lab, room 222, and baked goods of all kinds will be sold.
+										<div class="well">We will be at <a href="http://canfield.access-k12.org/chs/">Canfield High School</a> <sup><span style="font-size:.9em" class="glyphicon glyphicon-share"></span></sup> on December 7<sup>th</sup> for Canfield High School's annual Craft Show. Our table will be next to the CAD Lab, room 222, and baked goods of all kinds will be sold. The sale of these items will support the team in next year's competition,  which begins mid-january. Last year's robot will be on display all day. 
 										</div>
 									</div>
 								</div>
@@ -124,7 +124,7 @@ hr {margin:8px;}
 			</div>
 		</div><!--/CONTAINER-->
 		
-		<!-- Modal -->
+		<!-- Login Modal -->
 		<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginPopup" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -133,7 +133,7 @@ hr {margin:8px;}
 					</div>
 					<div class="modal-body">
 						<div class="row">
-							<div class="col-md-12">Login to the team member area. If you are not a part of the team, Talk to Mr. Crum in room 222.<strong>This has not yet been implemented, so this does nothing.</strong><hr>
+							<div class="col-md-12">Login to the team member area. If you are not a part of the team, Talk to Mr. Crum in room 222.<strong>This has not yet been implemented, so it does nothing.</strong><hr>
 							</div>
 						</div>
 						<div class="row">
