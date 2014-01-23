@@ -1,14 +1,61 @@
 <?php
+//First-name,Last-name,Email,Grade-Lvl,Cell-phone,Parent-Email,Hash,,Design,Writing,Marketing,Engineering,Programming,WebDesign,Other,m=0x7F&
+function create_query()
+{
+	
+	if($_GET['m'] === "0x7F")
+	{
+		$query = "INSERT INTO `users` (first_name, last_name, email, password, stu_grade, stu_parentemail,  cellphone) VALUES ('".$_POST['First-name']."','".$_POST['Last-name']."','".$_POST['Email']."','".$_POST['Hash']."','".$_POST['Grade-Lvl']."','".$_POST['Parent-Email']."','".$_POST['Cell-phone']."')";
+	}
+	elseif($_GET['m'] == "0x3D")
+	{
+		$query = "SELECT `first_name` FROM `users` WHERE `last_name`!='Ugolini'";
+	}
+}
 //$NewURL = "[mysqlserver]";
 //$Srvrresp = null;
 
-require(AbstractBase.php);
-require(Writer.php);
+// CONNECT TO THE DATABASE
 
-$writer = new Writer('write.csv');
-$writer->writeRow($_REQUEST['Fname'].",".$_REQUEST['Lname'].",".$_REQUEST['Email'].",".$_REQUEST['Gradelevel'].",".$_REQUEST['Sphone'].",".$_REQUEST['ParentEmail'].",".$_REQUEST['Design'].",".$_REQUEST['Writing'].",".$_REQUEST['Speaking'].",".$_REQUEST['Things'].",".$_REQUEST['Prog'].",".$_REQUEST['Web'].",".$_REQUEST['Other']);
+if(isset($_POST))
+	{
+		create_query();
+	}
+	else
+	{
+	echo("no method specified");
+	exit();
+	}
 
-//$NewURL = $NewURL."&Fname=".$_REQUEST['Fname']."&Lname=".$_REQUEST['Lname']."&Email=".$_REQUEST['Email']."&Gradelevel=".$_REQUEST['Gradelevel']."&Sphone=".$_REQUEST['Sphone']."&ParentEmail=".$_REQUEST['ParentEmail']."&Design=".$_REQUEST['Design']."&Writing=".$_REQUEST['Writing']."&Speaking=".$_REQUEST['Speaking']."&Things=".$_REQUEST['Things']."&Prog=".$_REQUEST['Prog']."&Web=".$_REQUEST['Web']."&Other=".$_REQUEST['Other'];
-//echo($NewURL);
+
+	$DB_NAME = '';
+	$DB_HOST = '';
+	$DB_USER = '';
+	$DB_PASS = '';
+	
+	$mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
+	
+	if (mysqli_connect_errno()) {
+		printf("Connect failed: %s\n", mysqli_connect_error());
+		exit();
+	}
+
+// A QUICK QUERY ON A FAKE USER TABLE
+	
+	$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
+
+// GOING THROUGH THE DATA
+	if($result->num_rows > 0) {
+		while($row = $result->fetch_assoc()) {
+			echo stripslashes($row['first_name']);	
+		}
+	}
+	else {
+		echo 'NO RESULTS';	
+	}
+	
+// CLOSE CONNECTION
+	mysqli_close($mysqli);
+	
+
 ?>
-
