@@ -4,7 +4,7 @@
 		<title>Sign up for JETS!</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -264,7 +264,7 @@ function Verify() {
 </script>
 
 		<script src="http://code.jquery.com/jquery-1.11.0-beta3.min.js"></script>
-    		<script src="js/bootstrap.min.js"></script>
+    		<script src="../js/bootstrap.min.js"></script>
    	 	<script src="//caligatio.github.io/jsSHA/sha.js"></script>
 	</body>
 </html>
