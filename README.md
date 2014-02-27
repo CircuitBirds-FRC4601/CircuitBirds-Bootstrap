@@ -7,9 +7,8 @@ I am aming for everything to at least meet the expectations of [this FIRST websi
 *That guide is from 2012. The 2013/14 version needs to be found*
 
 * Incorperate FIRST logo into homepage
-* Properly show how much we appreciate our sponsors :)
-* Make Everything perfect; grammar, layout, and now bugs, that is
-* Add lots of content to the site
+* Properly show how much we appreciate our sponsors
+* Add content
 
 TO-DO (distant future)
 ---------------------
@@ -19,4 +18,3 @@ This includes any functionality or major features that need to be implemented be
 * User Control Panel
 * Messaging System
 * SSL for all of the above
-* Everything must be injection proof before release
