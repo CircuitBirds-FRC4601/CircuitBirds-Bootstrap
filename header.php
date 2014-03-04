@@ -23,7 +23,7 @@
 							</li>
 							<li class="divider"></li>
 							<li><a href="http://www.usfirst.org/roboticsprograms/frc/resources">2014 Game <span class="glyphicon glyphicon-share"></span></a></li>
-							<li><a href="http://frc-manual.usfirst.org/">2014 <b>Safety</b> Manual <span class="glyphicon glyphicon-share"></span></a></li>
+							<li><a href="http://frc-manual.usfirst.org/">2014 Safety Manual <span class="glyphicon glyphicon-share"></span></a></li>
 						</ul>
 					</ul>
 				</div>
