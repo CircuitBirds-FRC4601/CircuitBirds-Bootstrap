@@ -1,11 +1,6 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-
-  <head>
-    <title></title>
-  </head>
-  <body>
-
-
-  </body>
-</html>
+<div style="padding-top:20px;" class="row">
+    <hr>
+    <div class="col-md-3 col-md-offset-4">
+        <div class="well pull-right well-sm"><span class="label label-default">Copyright&copy; 2013 &middot; CircuitBirds.com</span></div>
+    </div>
+</div>

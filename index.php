@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>CircuitBirds 4601</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-		<link href="css/style.css" rel="stylesheet" media="screen">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-		<style>
-		</style>
-	</head>
+	<?php include_once('header.php'); ?>
 	<body>
 		<div class="container">
-			<!-- Header -->
-			<?php include_once('header.php'); ?>
+			<!-- navbar -->
+			<?php include_once('menu.php'); ?>
 
 			<div class="container">
 				<div class="row">
@@ -56,72 +44,12 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<?php include_once('sidebar.php'); ?>
-					</div>
+				    <?php include_once('sidebar.php'); ?>
 				</div>
-				<div style="padding-top:20px;" class="row">
-					<hr>
-					<div class="col-md-3 col-md-offset-4">
-						<div class="well pull-right well-sm"><span class="label label-default">Copyright&copy; 2013 &middot; CircuitBirds.com</span></div>
-					</div>
-				</div>
+				<?php include_once('footer.php'); ?>
 			</div>
 		</div><!--/CONTAINER-->
-		
-		<!-- Login Modal -->
-		<div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginPopup" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h4 class="modal-title">Login</h4>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-md-12">Login to the team member area. If you are not a part of the team, Talk to Mr. Crum in room 222.<strong>This has not yet been implemented, so it does nothing.</strong><hr>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<form class="form form-inline">
-									<div id="error-Wrapper"></div>
-									<div class="form-group">
-										<label class="control-label" for="FName">username</label>
-										<input type="text" class="form-control" disabled="disabled" id="User" placeholder="Username...">
-									</div>
-									<div class="form-group">
-										<label class="control-label" for="LName">password</label>
-										<input type="password" class="form-control" disabled="disabled" id="Pass" placeholder="Password..">
-									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<div class="btn-group">
-							<button type="button" class="btn btn-default" disabled="disabled" onclick="Error()">Login</button>
-							<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="HideLoginModal()">Cancel</button>
-						</div>
-						
-					</div>
-				</div><!-- /MODAL-CONTENT -->
-			</div><!-- /MODAL-DIALOG -->
-		</div><!-- /MODAL -->
-
-
-<script>
-var errorReturn
-function submit()
-{
-//do POST and session stuff
-//then parse the returned text, probably JSON.
-//do logic.. if there's an error, leave the modal up: else loce it and load the username. 
-}
-function Error(err){document.getElementById("error-Wrapper").innerHTML="<div class=\"alert alert-danger\"><strong>"+err+"</strong><\/div>";}
-function ShowLoginModal(){$('#LoginModal').modal({backdrop:false})}
-function HideLoginModal(){$("#error-Wrapper").contents().remove();$('#LoginModal').modal(hide);}
-</script>
-<script src="//code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
+        <?php include_once('modal.php'); ?>
+        <?php include_once('scripts.php'); ?>
 	</body>
 </html>
