@@ -11,12 +11,3 @@ Found it: http://frc-manual.usfirst.org/viewItem/9#6.8.3
 * Incorperate FIRST logo into homepage
 * Properly show how much we appreciate our sponsors
 * Add content
-
-TO-DO (distant future)
----------------------
-This includes any functionality or major features that need to be implemented before competition.
-
-* Login System
-* User Control Panel
-* Messaging System
-* SSL for all of the above

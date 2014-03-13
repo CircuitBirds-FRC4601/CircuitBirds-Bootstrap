@@ -1,7 +1,8 @@
 <?php
 echo $_SERVER[REQUEST_URI];
-if (strpos($_SERVER[REQUEST_URI],"ponsors.php")==true) {$PartialURI = "SPONS";}
-else {echo "hi";}
+if (strpos($_SERVER[REQUEST_URI],"ponsors.php")==true) {$PageID = "SPONS";}
+else if (strpos($_SERVER[REQUEST_URI],"menu.php")==true) {$PageID = "MENU";}
+echo "<BR>".$PageID;
 ?>
 
 <div class="navbar navbar-inverse navbar-default">
@@ -15,9 +16,9 @@ else {echo "hi";}
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="//circuitbirds.com">Home</a></li>
-						<li><a href="sponsors/">Sponsors</a></li>
-						<li><a href="contact/">Contact</a></li>
+						<li class="active"><a href="index.php">Home</a></li>
+						<li><a href="sponsors.php">Sponsors</a></li>
+						<li><a href="contact.php">Contact</a></li>
 						<li><a onclick="ShowLoginModal()">Login</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">

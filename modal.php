@@ -34,3 +34,23 @@
         </div>
       </div>
     </div>
+
+			<!-- Modal -->
+<div class="modal fade" id="DoneModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+							<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>- - We want the user to have to choose., closingthis way will probably break somehing in the future -->
+						<h4 class="modal-title">Success! :D</h4>
+					</div>
+					<div id="modal-body" class="modal-body">
+						You are now Signed up for Team 4601, and all of the information that you have provided has been securely saved.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal" onclick="SuccessHideModal()">Close (These use the same function for now)</button>
+						<button type="button" class="btn btn-warning" data-dismiss="modal" onclick="SuccessHideModal()">Close</button>
+					</div>
+				</div><!-- /MODAL-CONTENT -->
+			</div><!-- /MODAL-DIALOG -->
+		</div><!-- /MODAL -->
+		</div><!--/CONTAINER-->
