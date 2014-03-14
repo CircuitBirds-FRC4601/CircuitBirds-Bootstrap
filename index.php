@@ -5,7 +5,6 @@
 		<div class="container">
 			<!-- navbar -->
 			<?php include_once('menu.php'); ?>
-
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8">

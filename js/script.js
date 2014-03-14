@@ -3,7 +3,7 @@ var respData;
 var xmlhttp = new XMLHttpRequest();
 
 function ShowLoginModal(){$('#LoginModal').modal({backdrop:false})}
-function HideLoginModal(){$("#error-Wrapper").contents().remove();$('#LoginModal').modal(hide);}
+function HideLoginModal() {$("#error-Wrapper").contents().remove();$('#LoginModal').modal(hide);}
 
 
 function Error(err) {
@@ -42,7 +42,7 @@ function Verify() {
     var Lname = docu.getElementById("LName");
     var Email = docu.getElementById("Email");
     var Gradelevel = docu.getElementById("Gradelevel");
-    Gradelevel = Gradelevel.options[Gradelevel.selectedIndex].value
+    Gradelevel = Gradelevel.options[Gradelevel.selectedIndex].value;
     var SPhone = docu.getElementById("SPhone");
     var ParentEMail = docu.getElementById("PEmail");
 

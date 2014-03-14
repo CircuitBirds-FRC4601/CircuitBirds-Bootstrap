@@ -41,7 +41,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 							<!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>- - We want the user to have to choose., closingthis way will probably break somehing in the future -->
-						<h4 class="modal-title">Success! :D</h4>
+						<h4 class="modal-title">Success!</h4>
 					</div>
 					<div id="modal-body" class="modal-body">
 						You are now Signed up for Team 4601, and all of the information that you have provided has been securely saved.

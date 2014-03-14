@@ -1,9 +1,9 @@
 <?php
-echo $_SERVER[REQUEST_URI];
-if (strpos($_SERVER[REQUEST_URI],"ponsors.php")==true) {$PageID = "SPONS";}
-else if (strpos($_SERVER[REQUEST_URI],"menu.php")==true) {$PageID = "MENU";}
-echo "<BR>".$PageID;
-?>
+//echo $_SERVER[REQUEST_URI];
+//if (strpos($_SERVER[REQUEST_URI],"ponsors.php")==true) {$PageID = "SPONS";}
+//else if (strpos($_SERVER[REQUEST_URI],"menu.php")==true) {$PageID = "MENU";}
+//echo "<BR>".$PageID;
+//?>
 
 <div class="navbar navbar-inverse navbar-default">
 				<div class="navbar-header">
