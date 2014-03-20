@@ -1,7 +1,6 @@
 <!--Begin Menu-->
 <?php
 $URI = $_SERVER[REQUEST_URI];
-echo $URI;
 if (strpos($URI, "ponsors.php")==true) {$PageID="SPONS";}
 else if (strpos($URI, "menu.php")==true) {$PageID="MENU";}
 else if (strpos($URI, "contact.php")==true) {$PageID="CONTACT";}
