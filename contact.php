@@ -11,7 +11,7 @@
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-8">
-                            <form class="form">
+                            <form class="form" action="http://circuitbirds.com/contact/contact.php" method="post">
                                 <div class="form-group">
                                     <label for="name">Your Name</label>
                                     <input type="text" class="form-control" id="name" placeholder="Your name">
@@ -24,7 +24,7 @@
                                     <label for="message">Message</label>
                                     <textarea class="form-control" rows="3" id="message" placeholder="What's up?"></textarea>
                                 </div>
-                            <button onclick="SendMessage()"  class="btn btn-default">Submit</button>
+                            <button type="submit" class="btn btn-default">Submit</button>
                             </form>
 
                         </div>

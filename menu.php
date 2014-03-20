@@ -27,8 +27,6 @@ echo $PageID;
             </li>
             <li<?php if($PageID=="CONTACT"){echo " class=\"active\"";} ?>><a href="contact.php">Contact</a>
             </li>
-            <li><a onclick="ShowLoginModal()">Login</a>
-            </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="http://www.thebluealliance.com/">The Blue Alliance <span class="glyphicon glyphicon-share"></span></a>
