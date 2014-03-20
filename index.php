@@ -19,7 +19,7 @@
 								</div>
 								<div id="collapseBrunch" class="panel-collapse collapse in">
 									<div class="panel-body">
-										<img src="images/img_0493.png" class="img-responsive" alt="" /><hr>
+										<img src="images/img_0493.png" class="img-responsive" alt="Meet the Team" /><hr>
 										<div class="well">This past week on March 1, 2014, we held a brunch in the cafeteria of Canfield High School to show off our hard work to our coperate sponsors and parents. Parents were able to meet a few of our sponsors and see last year's robot in action.
 										</div>
 									</div>
@@ -35,7 +35,6 @@
 								</div>
 								<div id="collapseBakeSale" class="panel-collapse collapse">
 									<div class="panel-body">
-										<img src="images/img_0493.png" class="img-responsive" alt="" /><hr>
 										<div class="well">We will be at <a href="http://canfield.access-k12.org/chs/">Canfield High School</a><sup><span style="font-size:.9em" class="glyphicon glyphicon-share"></span></sup> on December 7<sup>th</sup> for Canfield High School's annual Craft Show. Our table will be next to the CAD Lab, room 222, and baked goods of all kinds will be sold. The sale of these items will support the team in next year's competition,  which begins mid-january. Last year's robot will be on display all day.
 										</div>
 									</div>
@@ -51,7 +50,7 @@
 								</div>
 								<div id="#collapseLouis" class="panel-collapse collapse">
 									<div class="panel-body">
-										<img src="images/img_0493.png" class="img-responsive" alt="" /><hr>
+										<img src="images/img_0493.png" class="img-responsive" alt="The team and awards in Pittspurgh 2013" /><hr>
 										<div class="well">After winning the Rookie All-star award, we got ourselves a spot in the championship! This picture was taken while cleaning up our pit area and includes almost all our team members.
 										</div>
 									</div>
