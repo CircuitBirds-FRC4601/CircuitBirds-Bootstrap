@@ -14,8 +14,13 @@
     <div class="row">
         <div class="col-md-12">
             <h3>About</h3>
-            We are rookie team from Canfield, Ohio. We attended the Pittsburgh, PA Regional, where we won the Highest Rookie Seed Award, Rookie All-star award, and were 5<sup>th</sup> based on the number of points. At the championship we won the Rookie
-            Inspiration Award and placed 31<sup>st</sup> in the Galileo Division.
+            Formed last year in the town of Canfield, OH, our team known as the "Circuit Birds"
+is on its way toward another year of intense competition in the FIRST Robotics league.
+Last year, we made a name for ourselves during the Pittsburgh, PA Regional where we placed 14<sup>th</sup> overall and
+won both the Highest Rookie Seed Award and the Rookie All-Star Award.  Later at the FRC International Championship,
+we received the coveted Rookie Inspiration Award and placed 31<sup>st</sup> in the Galileo Division.  We have grown
+exponentially since then and look forward to competing in the upcoming events, Buckeye in Cleveland, OH and Pittsburgh in
+California, PA.
         </div>
     </div>
     <div class="row">
@@ -35,6 +40,9 @@
                 </div>
                 <div style="padding-top:10px;" class="col-md-11 pull-right">
                     <img src="fonts/glyphicons_e-mail.png" height="24" width="24" border="0" />&nbsp;&nbsp;<a href="/contact/">Email Us</a>
+                </div>
+                <div style="padding-top:10px;" class="col-md-11 pull-right">
+                    <img src="fonts/glyphicons_github.png" height="24" width="24" border="0" />&nbsp;&nbsp;<a href="https://github.com/CircuitBirds-FRC4601/">Github</a>
                 </div>
             </div>
         </div>

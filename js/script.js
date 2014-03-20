@@ -1,7 +1,3 @@
-var errorReturn;
-var respData;
-var xmlhttp = new XMLHttpRequest();
-
 function ShowLoginModal(){$('#LoginModal').modal({backdrop:false})}
 function HideLoginModal() {$("#error-Wrapper").contents().remove();$('#LoginModal').modal(hide);}
 
@@ -28,7 +24,7 @@ function hashpasswordtext() {
         var hashOutput;
         var hashObject = new jsSHA(passwordINPUT, "TEXT");
         var hashout = hashObject.getHash("SHA-512", "B64", 25);
-return hashout
+        return hashout
     }
     catch (e) {
         hashout.value = e
@@ -37,26 +33,18 @@ return hashout
 
 function Verify() {
 
-    var docu = document;
-    var FName = docu.getElementById("FName");
-    var Lname = docu.getElementById("LName");
-    var Email = docu.getElementById("Email");
-    var Gradelevel = docu.getElementById("Gradelevel");
-    Gradelevel = Gradelevel.options[Gradelevel.selectedIndex].value;
-    var SPhone = docu.getElementById("SPhone");
-    var ParentEMail = docu.getElementById("PEmail");
+    var docu = document,
+        FName       = $("#FName"),
+        Lname       = $("#LName"),
+        Email       = $("#Email"),
+        Gradelevel  = $("#Gradelevel"),
+        SPhone      = $("#SPhone"),
+        ParentEMail = $("#PEmail");
 
-    var i1a,
-        i2a,
-        i3a,
-        i4a,
-        i5a,
-        i6a,
-        i7a;
-    var xmlHttp = null;
-    var httpresp = null;
+    Gradelevel = Gradelevel.options[Gradelevel.selectedIndex].value;
+
     if (((FName.value || Lname.value || Email.value || ParentEMail.value || Password.value) == "") || Gradelevel == "-") {
-        console.log("IT ERRORED :D");
+        console.log("Some blank fields");
         Error();
     } else {
         console.log("No error this time.");
@@ -67,9 +55,6 @@ function Verify() {
         Email       = escape(Email.value);
         SPhone      = escape(SPhone.value.replace(/\D/g,''));
         ParentEMail = escape(ParentEMail.value);
-
-        var URL = "http://circuitbirds.com/signup/process.php";
-		var DATA;
 
         var j = {
                 "First-name"  : FName,
@@ -99,12 +84,12 @@ function Verify() {
         console.log(j);
         console.log(i);
 
-        DATA = j + "&" + i;
+        var DATA = j + "&" + i,
+        xmlhttp = new XMLHttpRequest(),
+        respDATA;
 
         console.log(DATA);
-
-
-
+//Make this look like the one below.
 		xmlhttp.onreadystatechange = function () {
     		if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 				SuccessShowModal();
@@ -128,5 +113,49 @@ function success()
 {
     //do POST and session stuff
     //then parse the returned text, probably JSON.
-    //do logic.. if there's an error, leave the modal up: else loce it and load the username.
+    //do logic.. if there's an error, leave the modal up: else close it and load the username.
+}
+
+function SendMessage()
+{
+
+
+    console.log("Send Message");
+
+    var xmlHttp = new XMLHttpRequest();
+    var httpresp = null;
+
+    var name    = escape(document.getElementById("name").value),
+        email   = escape(document.getElementById("email").value),
+        message = escape(document.getElementById("message").value);
+
+    var messageBody = {
+                "name"      : name,
+                "email"     : email,
+                "message"   : message,
+            };
+
+    messageBody = jQuery.param(messageBody);
+
+    var DATA    = messageBody,
+        xmlhttp = new XMLHttpRequest(),
+        respDATA;
+
+    console.log(DATA);
+
+    xmlhttp.open("POST", "http://circuitbirds.com/contact/contact.php", true);
+    xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xmlhttp.send(DATA);
+    console.log(xmlHttp.responseText);
+
+
+	/*xmlhttp.onreadystatechange = function () {
+        console.log("Status:"+xmlHttp.status+" ,State:"+xmlHttp.readyState);
+        if (xmlhttp.readyState == 4 && (xmlhttp.status == 200 || xmlHttp.status == 304)) {
+        	respDATA = xmlhttp.responseText;
+            console.log(respDATA);
+        }
+	   else{Error();console.log("Error!")};
+    }*/
+
 }
