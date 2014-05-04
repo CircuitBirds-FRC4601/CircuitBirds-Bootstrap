@@ -1,12 +1,12 @@
 <!--Begin Menu-->
 <?php
-$URI = $_SERVER[REQUEST_URI];
+$URI = $_SERVER['REQUEST_URI'];
 if (strpos($URI, "ponsors.php")==true) {$PageID="SPONS";}
 else if (strpos($URI, "menu.php")==true) {$PageID="MENU";}
 else if (strpos($URI, "contact.php")==true) {$PageID="CONTACT";}
 else if (strpos($URI, "index.php")==true) {$PageID="HOME";}
+//else if (strpos($URI, "donate.php")==true) {$PageID="DONATE";}
 else {$PageID="HOME";}
-echo $PageID;
 ?>
 
 <div class="navbar navbar-inverse navbar-default">

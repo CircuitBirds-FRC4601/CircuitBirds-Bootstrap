@@ -1,3 +1,7 @@
 hr {
 	margin:8px;
 }
+#test
+{
+    border-bottom-width: thin;
+}

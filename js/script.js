@@ -1,4 +1,4 @@
-function ShowLoginModal(){$('#LoginModal').modal({backdrop:false})}
+function ShowLoginModal() {$('#LoginModal').modal({backdrop:false})}
 function HideLoginModal() {$("#error-Wrapper").contents().remove();$('#LoginModal').modal(hide);}
 
 
@@ -129,11 +129,12 @@ function SendMessage()
         email   = escape(document.getElementById("email").value),
         message = escape(document.getElementById("message").value);
 
-    var messageBody = {
+    var messageBody =
+        {
                 "name"      : name,
                 "email"     : email,
                 "message"   : message,
-            };
+        };
 
     messageBody = jQuery.param(messageBody);
 

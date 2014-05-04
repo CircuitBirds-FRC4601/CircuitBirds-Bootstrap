@@ -11,18 +11,18 @@
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-8">
-                            <form class="form" action="http://circuitbirds.com/contact/contact.php" method="post">
+                            <form class="form" action="//circuitbirds.com/mail.php" method="POST">
                                 <div class="form-group">
                                     <label for="name">Your Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email">Email address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
                                 </div>
                                 <div class="form-group">
                                     <label for="message">Message</label>
-                                    <textarea class="form-control" rows="3" id="message" placeholder="What's up?"></textarea>
+                                    <textarea class="form-control" rows="3" id="message" name="message" placeholder="What's up?"></textarea>
                                 </div>
                             <button type="submit" class="btn btn-default">Submit</button>
                             </form>
@@ -40,3 +40,4 @@
 </body>
 
 </html>
+<script>//contact/contact.php</script>
