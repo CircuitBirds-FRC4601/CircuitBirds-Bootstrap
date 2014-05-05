@@ -4,7 +4,7 @@ $field_name = $_POST['name'];
 $field_email = $_POST['email'];
 $field_message = $_POST['message'];
 
-$mail_to = 'ugolinipaul@gmail.com';//team4601@gmail.com
+$mail_to = 'team4601@gmail.com';//team4601@gmail.com
 $subject = 'Emailed from circuitbirds.com '.$field_name;
 
 $body_message = 'From: '.$field_name."\n";
@@ -14,18 +14,31 @@ $body_message .= 'Message: '.$field_message;
 $headers = 'From: '.$field_email."\r\n";
 $headers .= 'Reply-To: '.$field_email."\r\n";
 
-//$headers = http_build_query($headers);
-$mail_status = mail($mail_to, $subject, $body_message, $headers);
-if($mail_status)
+if(trim($field_name) == "" || trim($field_email) == "" || trim($field_message) == "")
 {
-    echo "Email Sent. <a href=\"//circuitbirds.com/contact.php\">Please return to home page.</a>";
+    $Message = "Please fill in all of the fields.";
+    $Return_type = "warning";
 }
 else
 {
-    echo "error. Please email <a href=\"mailto:team4601@gmail.com\">team4601[at]gmail.com</a>";
+    if($_POST['copy'])
+    {
+        $mail_to .=",".$field_email;
+    }
+
+$mail_status = mail($mail_to, $subject, $body_message, $headers);
+if($mail_status)
+{
+    $Message = "Email sent to ".$mail_to.". <a href=\"//circuitbirds.com/contact.php\">Please return to home page.</a>";
+    $Return_type = "success";
 }
-
-
+else
+{
+    $Message = "error. Please email <a href=\"mailto:team4601@gmail.com\">team4601[at]gmail.com</a>";
+    $Return_type = "warning";
+}
+}
+require_once("contact.php");
 
 
 /*

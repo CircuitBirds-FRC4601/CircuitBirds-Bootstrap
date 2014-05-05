@@ -5,7 +5,7 @@ if (strpos($URI, "ponsors.php")==true) {$PageID="SPONS";}
 else if (strpos($URI, "menu.php")==true) {$PageID="MENU";}
 else if (strpos($URI, "contact.php")==true) {$PageID="CONTACT";}
 else if (strpos($URI, "index.php")==true) {$PageID="HOME";}
-//else if (strpos($URI, "donate.php")==true) {$PageID="DONATE";}
+else if (strpos($URI, "mail.php")==true) {$PageID="MAIL";}
 else {$PageID="HOME";}
 ?>
 

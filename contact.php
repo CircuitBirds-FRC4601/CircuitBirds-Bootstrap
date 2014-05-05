@@ -11,7 +11,12 @@
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-md-8">
-                            <form class="form" action="//circuitbirds.com/mail.php" method="POST">
+                            <?php
+                                if(isset($Return_type)&&isset($Message)) {echo "<div class=\"alert alert-".$Return_type."\"><strong>".$Message."                                        </strong></div><br>";}
+                                elseif(isset($Return_type)&&!isset($Message)) {echo "ERROR";}
+                                elseif(!isset($Return_type)&&isset($Message)) {echo "ERROR";}
+                            ?>
+                            <form class="form" action="//circuitbirds.com/mail.php" method="GET">
                                 <div class="form-group">
                                     <label for="name">Your Name</label>
                                     <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
@@ -23,6 +28,11 @@
                                 <div class="form-group">
                                     <label for="message">Message</label>
                                     <textarea class="form-control" rows="3" id="message" name="message" placeholder="What's up?"></textarea>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="copy" type="checkbox"> Send a copy to me
+                                    </label>
                                 </div>
                             <button type="submit" class="btn btn-default">Submit</button>
                             </form>
