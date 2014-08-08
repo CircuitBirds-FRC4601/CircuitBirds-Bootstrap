@@ -1,4 +1,4 @@
-<?php /*This needs to accomodate the browser more.*/
+<?php /*This needs to accomodate the browser more.   !preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/", $email_address)*/
 
 $field_name = $_POST['name'];
 $field_email = $_POST['email'];
@@ -18,9 +18,20 @@ if(trim($field_name) == "" || trim($field_email) == "" || trim($field_message) =
 {
     $Message = "Please fill in all of the fields.";
     $Return_type = "warning";
+
+    if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/", $field_email))
+    {
+     $message = "Please fill in all fields and enter a properly formatted email address.";
+    }
+}
+else if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/", $field_email))
+{
+    $Message = "Please format your email properly.";
+    $Return_type = "warning";
 }
 else
 {
+
     if($_POST['copy'])
     {
         $mail_to .=",".$field_email;

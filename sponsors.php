@@ -51,7 +51,7 @@
                                 <div class="panel-body">
                                     <div class="container">
                                         <ul class="">
-                                            <liNASA</li>
+                                            <li>NASA</li>
                                             <li>Canfield Board of Education</li>
                                             <li>City Machine Technology</li>
                                             <li>Lube Plus</li>
@@ -78,6 +78,7 @@
                                             <li>Broad Street Diner</li>
                                             <li>The Manor</li>
                                             <li>Davidson's</li>
+                                            <li>Rhiel Supply</li>
                                         </ul>
                                     </div>
                                 </div>

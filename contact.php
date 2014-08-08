@@ -13,8 +13,8 @@
                         <div class="col-md-8">
                             <?php
                                 if(isset($Return_type)&&isset($Message)) {echo "<div class=\"alert alert-".$Return_type."\"><strong>".$Message."                                        </strong></div><br>";}
-                                elseif(isset($Return_type)&&!isset($Message)) {echo "ERROR";}
-                                elseif(!isset($Return_type)&&isset($Message)) {echo "ERROR";}
+                                elseif(isset($Return_type)&&!isset($Message) || !isset($Return_type)&&isset($Message)) {echo "Something went wrong. Please try again.";}
+                                else() {echo "Something went very wrong. Please email us about this error.";}
                             ?>
                             <form class="form" action="//circuitbirds.com/mail.php" method="GET">
                                 <div class="form-group">
@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input name="copy" type="checkbox"> Send a copy to me
+                                        <input name="copy" type="checkbox"> Send a copy to my email
                                     </label>
                                 </div>
                             <button type="submit" class="btn btn-default">Submit</button>
@@ -50,4 +50,4 @@
 </body>
 
 </html>
-<script>//contact/contact.php</script>
+
