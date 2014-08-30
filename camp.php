@@ -45,6 +45,7 @@
                                         <img src="images/remote_favs/makezine" width="20" type="image/x-icon" />
                                     </a>&nbsp;<a href="//makezine.com/">makezine.com</a> publishes tutorials for new projects geared toward beginners.
                                 </li>
+                            </ul>
                         </div>
 
                         <div class="panel panel-default">
@@ -84,8 +85,6 @@
                         </div>
                     </div>
 
-
-                    </ul>
                 </div>
                 <?php include_once( 'sidebar.php'); ?>
             </div>
