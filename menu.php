@@ -8,6 +8,7 @@ else if (strpos($URI, "index.php")==true) {$PageID="HOME";}
 else if (strpos($URI, "mail.php")==true) {$PageID="MAIL";}
 else if (strpos($URI, "camp.php")==true) {$PageID="CAMP";}
 else if (strpos($URI, "calendar.php")==true) {$PageID="CALENDAR";}
+else if (strpos($URI, "affiliates.php")==true) {$PageID="AFFIL";}
 else {$PageID="HOME";}
 ?>
 
@@ -28,9 +29,11 @@ else {$PageID="HOME";}
             </li>
             <li<?php if($PageID=="CONTACT"){echo " class=\"active\"";} ?>><a href="contact.php">Contact</a>
             </li>
+            <li<?php if($PageID=="AFFIL"){echo " class=\"active\"";} ?>><a href="affiliates.php">Affiliates</a>
+            </li>
             <li<?php if($PageID=="CALENDAR"){echo " class=\"active\"";} ?>><a href="calendar.php">Calendar</a>
             </li>
-            <li<?php if($PageID=="CAMP"){echo " class=\"active\"";} ?>><a class="h4" href="camp.php">Summer Camp 2014</a>
+            <li<?php if($PageID=="CAMP"){echo " class=\"active\"";} ?>><a href="camp.php">Summer Camp 2014</a>
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

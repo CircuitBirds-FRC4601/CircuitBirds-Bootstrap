@@ -12,9 +12,9 @@
                     <div class="row">
                         <div class="col-md-8">
                             <?php
-                                if(isset($Return_type)&&isset($Message)) {echo "<div class=\"alert alert-".$Return_type."\"><strong>".$Message."                                        </strong></div><br>";}
-                                elseif(isset($Return_type)&&!isset($Message) || !isset($Return_type)&&isset($Message)) {echo "Something went wrong. Please try again.";}
-                                else() {echo "Something went very wrong. Please email us about this error.";}
+                                if(isset($Return_type)&&isset($Message)) {echo "<div class=\"alert alert-".$Return_type."\"><strong>".$Message."</strong></div><br>";}
+                                elseif(isset($Return_type)&&!isset($Message) || !isset($Return_type)&&isset($Message)) {echo "Something went wrong. If you think the problem is on our end, please email us about this error at team4601@gmail.com";}
+                                //{echo "Something went very wrong. Please email us about this error at team4601@gmail.com.";}
                             ?>
                             <form class="form" action="//circuitbirds.com/mail.php" method="GET">
                                 <div class="form-group">

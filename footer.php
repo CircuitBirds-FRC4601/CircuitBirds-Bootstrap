@@ -6,7 +6,7 @@
     </div>
     <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3" id="test">
         <div class="well pull-right well-sm">
-            <span class="label label-default">Copyright&copy; 2013 &middot; CircuitBirds.com</span>
+            <span class="label label-default">Copyright&copy; 2014 &middot; CircuitBirds.com</span>
         </div>
     </div>
 
