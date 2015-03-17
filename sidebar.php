@@ -53,9 +53,9 @@ California, PA.
             <div class="row">
                 <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 pull-right"><span class="glyphicon glyphicon-share"></span>&nbsp;&nbsp;<a href="http://delphielite.com/" target="_blank">#48 - Delphi E.L.I.T.E.</a>
                 </div>
-                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 pull-right"><span class="glyphicon glyphicon-share"></span>&nbsp;&nbsp;<a href="http://www.redbarons63.com/" target="_blank">#63 - The Red Barons</a>
+                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 pull-right"><span class="glyphicon glyphicon-share"></span>&nbsp;&nbsp;<a href="http://mcdowellrobotics.com" target="_blank">#63 - The Red Barons</a>
                 </div>
-                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 pull-right"><span class="glyphicon glyphicon-share"></span>&nbsp;&nbsp;<a href="http://team291.org/Team291/index.html" target="_blank">#291 - C.I.A. - Creativity In Action</a>
+                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 pull-right"><span class="glyphicon glyphicon-share"></span>&nbsp;&nbsp;<a href="http://www.team291.org/" target="_blank">#291 - C.I.A. - Creativity In Action</a>
                 </div>
                 <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 pull-right"><span class="glyphicon glyphicon-share"></span>&nbsp;&nbsp;<a href="http://falcotech3193.com/" target="_blank">#3193 - Falco Tech</a>
                 </div>
